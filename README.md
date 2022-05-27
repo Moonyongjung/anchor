@@ -1,16 +1,21 @@
 # anchor
 Private chain (based on Tendermint core) is anchoring to Public chain (based on Ethereum core)
 
-## To start
+## Prerequisites
+- `mnemonic` that use to create anchor account set in the `config/configKey.json`.
+- Smart contract ABI & bytecode set in the `rpc/contracts`. (Default contract is set)
+- Smart contract must be deployed. Use functions(`rpc.GolangBindings(), rpc.DeployAnchorContract()`) in the `anchor.go` without operating RPC client and HTTP client/server in order to deploy
+  - Deactivate RPC client and HTTP client/server functions(`rpc.InitCheckContractState(Channel), rpc.SendInvokeTransaction(Channel), rpc.SendCallTransaction(Channel), gw.RunHttpServer(Channel), gw.RunHttpClient(Channel)`) in the `anchor.go`
+  - Activate Deploy functions(` rpc.GolangBindings(), rpc.DeployAnchorContract()`) in the `anchor.go`
+  - Run (`go run anchor.go`)
+  - Return to original
+
+## Start
 ```
 go build anchor.go
 ./anchor
 ```
 
-## Prerequisites
-- `mnemonic` that use to create anchor account set in the `config/configKey.json`.
-- Smart contract ABI & bytecode set in the `rpc/contracts`. (Default contract is set)
-- If smart contract is changed, use functions(`rpc.GolangBindings(), rpc.DeployAnchorContract()`) in the `anchor.go` without operating RPC client and HTTP client/server in order to deploy
 ## Overview
 
 ### Configuration
