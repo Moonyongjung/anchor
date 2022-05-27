@@ -1,0 +1,12 @@
+{
+    "bscUrlForMainnet":"https://bsc-dataseed.binance.org/",
+    "bscUrlForTestnet":"https://data-seed-prebsc-1-s1.binance.org:8545/",
+    "localEth":"http://127.0.0.1:8545",
+    "gatewayServerPort":"12000",
+    "targetNodeInfoCosmos":"https://rest.one.theta-2-testnet.polypore.xyz/",
+    "targetNodeInfoTerra":"https://pisco-lcd.terra.dev/",
+    "httpClientApiName":"blocks/",
+    "collectBlockCount":"30",
+    "contractInvokeName":"invokeBlockList",
+    "contractCallName":"callBlockList"
+}

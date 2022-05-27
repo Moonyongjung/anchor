@@ -1,0 +1,11 @@
+// Test Contract func
+Invokefunction = ["invokeBlockList"]
+CallFunction = ["callBlockList"]
+
+// Invoke API
+// /invoke/INVOKE_CONTRACT_FUNC
+GW_ADD:GW_PORT/api/v1/invoke/invokeBlockList
+
+// Call API
+// /call/CALL_CONTRACT_FUNC
+GW_ADD:GW_PORT/api/v1/call/callBlockList

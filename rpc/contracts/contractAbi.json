@@ -1,0 +1,48 @@
+[
+	{
+		"inputs": [],
+		"name": "callBlockList",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "merkleRoot",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "startBlock",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "endBlock",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "merkleroot",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "startBlock",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "endBlock",
+				"type": "string"
+			}
+		],
+		"name": "invokeBlockList",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
